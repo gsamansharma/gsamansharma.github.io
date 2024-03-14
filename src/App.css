@@ -1,5 +1,7 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 .App {
   text-align: center;
+  background-color: #252a33;
 }
 
 .App-logo {
@@ -13,6 +15,37 @@
   }
 }
 
+
+.highlight{
+  border-radius: 10%;
+  background-color: #ffffff;
+  color:#cb2005;
+  border:0px;
+  cursor: pointer;
+  
+}
+.highlight1{
+  border-radius: 10%;
+  /* background-color: #176c68; */
+  background-color:  #e0e0e0 ;
+  cursor: pointer;
+  color:#333333;
+  border:0px;
+}
+.highlight2:visited{
+  color:inherit;
+  
+
+}
+.highlight2:link{
+  color:inherit;
+  
+
+}
+.userprompt{
+  color:#a2a2a2;
+
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +67,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.maestro{
+  /* display: block; */
+  line-height: 1;
+}
+@media only screen and (max-width: 350px) {
+  .container{
+display: none;
+ }
+  /* .root:after{
+    content: "kjhj";
+  } */
+}
+
+@media only screen and (max-width: 685px) {
+  .maestro {
+    display: none;
   }
 }
