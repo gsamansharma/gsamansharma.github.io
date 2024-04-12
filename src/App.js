@@ -16,7 +16,7 @@ function App() {
   const HelpText = () => (
     <>
     <table>
-  <tr><td><button onClick={printsocial} className="highlight1">social</button>                  </td>
+  <tr><td><button onClick={printsocial} className="highlight1">social</button>              </td>
     <td>View social account</td>
   </tr>
   <tr>
@@ -46,23 +46,23 @@ function App() {
   const SocialText = () => (
     <>
     <table>
-  <tr><td><i class="nf nf-cod-github"></i><a href="https://www.github.com/gsamansharma" target="blank" className="highlight2">github</a>                  </td>
+  <tr><td><i class="nf nf-cod-github"></i> <a href="https://www.github.com/gsamansharma" target="blank" className="highlight2">github</a>                  </td>
     <td>Open Github page</td>
   </tr>
   <tr>
-    <td><i class="nf nf-md-linkedin"></i><a href="https://www.linked.com/in/gsamansharma" target="blank" className="highlight2">linkedin</a></td>
+    <td><i class="nf nf-md-linkedin"></i> <a href="https://www.linked.com/in/gsamansharma" target="blank" className="highlight2">linkedin</a></td>
     <td>Open linkedin page</td>
   </tr>
   <tr>
-  <td><i class="nf nf-cod-twitter"></i><a href="https://www.linked.com/in/gsamansharma" target="blank" className="highlight2">twitter</a></td>
+  <td><i class="nf nf-cod-twitter"></i> <a href="https://www.linked.com/in/gsamansharma" target="blank" className="highlight2">twitter</a></td>
     <td>Open twitter page</td>
   </tr>
   <tr>
-  <td><i class="nf nf-md-youtube"></i><a href="https://www.linked.com/in/gsamansharma" target="blank" className="highlight2">youtube</a></td>
+  <td><i class="nf nf-md-youtube"></i> <a href="https://www.linked.com/in/gsamansharma" target="blank" className="highlight2">youtube</a></td>
     <td>Open youtube page</td>
   </tr>
   <tr>
-  <td><i class="nf nf-fa-instagram"></i><a href="https://www.linked.com/in/gsamansharma" target="blank" className="highlight2">instagram</a></td>
+  <td><i class="nf nf-fa-instagram"></i> <a href="https://www.linked.com/in/gsamansharma" target="blank" className="highlight2">instagram</a></td>
     <td>Open instagram page</td>
   </tr>
 </table>
@@ -76,9 +76,17 @@ function App() {
   );
   const About=()=>(
     <>
-    Bla bla bla
-    </>
-  );
+    <div className="flex-container">
+        <div className="flex-box"></div>
+          {/* <img src="path/to/image.jpg" alt="Image" /> */}
+        </div>
+        <div className="flex-box">
+          <p>Some text goes here unlinimi f lorem50klj dsf Redundant alt attribute. Screen-readers already announce `img` tags as an image. You dont need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt</p>
+        </div>
+      
+    
+     </>
+    );
   const Portfolio=()=>(
     <>
     Bla bla bla
@@ -187,23 +195,12 @@ For a list of commands, type <b>
   </b>
   
 </div>
-/* <div><span>&nbsp;</span>
- ░▒▓██████▓▒░░▒▓██████████████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░        ░▒▓███████▓▒░▒▓█▓▒░░▒▓█▓▒░  <br/>
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ <br/>
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ <br/>
-░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░       ░▒▓██████▓▒░░▒▓████████▓▒░ <br/>
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░             ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ <br/>
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ <br/>
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░ <br/>
- ┏┏┓┏┓┏┓┓ 
-━┫┏┛┣┫┗┓┣━
- ┗• ┛┗┗┛┛ 
-          
+
 
                                                     
                                                                                               
 
-</div>  */                                                                                 
+                                                                                
   
   ]);
   return (

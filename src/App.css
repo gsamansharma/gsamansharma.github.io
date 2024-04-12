@@ -24,13 +24,19 @@
   cursor: pointer;
   
 }
-.highlight1{
+.highlight1backup{
   border-radius: 10%;
   /* background-color: #176c68; */
   background-color:  #e0e0e0 ;
   cursor: pointer;
   color:#333333;
   border:0px;
+}
+.highlight1{
+  color: inherit;
+  background-color: inherit;
+  border: 0px;
+  font-size: inherit;
 }
 .highlight2:visited{
   color:inherit;
